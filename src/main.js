@@ -12,7 +12,7 @@ gsap.to('.part3-nuee', { // Ne pas oublier d'indiquer ta classe css
     opacity: 1, // Finit en opacité 1
     y: 1000, // Permet l'animation vers le bas
    
-    // Conditions de déclanchements
+    // Conditions de déclenchements
     scrollTrigger: {
     trigger: ".part3", //Le contenu de la classe devient la "zone de surveillance"
     start: "top+=500", // L'animation commence à 500px du haut de ".part3"
