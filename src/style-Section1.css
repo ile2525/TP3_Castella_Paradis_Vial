@@ -1,0 +1,35 @@
+/* -----section 1 ----- Sandra ----- */
+.narration1 img {
+    width: 100%;
+}
+
+.narration1 .nuage {
+    width: auto;
+    height: auto;
+}
+
+.narration1 .oiseaux {
+    width: auto;
+    height: auto;
+}
+
+.volcanTrigger img {
+    width: 100%;
+    height: auto;
+    scale: 1;
+
+}
+
+.narration1 .volcan {
+    width: 100%;
+    height: auto;
+    scale: 0.5;
+    position: absolute;
+}
+
+.volcanTrigger {
+    display: flex;
+    align-items: flex-end;
+}
+
+
