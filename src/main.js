@@ -24,6 +24,24 @@ gsap.to('.part3-nuee', { // Ne pas oublier d'indiquer ta classe css
     }
 })
 
+//----------------------section 1---------Sandra---------------
+
+gsap.to('.volcan', { // Ne pas oublier d'indiquer ta classe css
+
+    // Propriétés d'animation
+
+
+   
+    // Conditions de déclenchements
+    scrollTrigger: {
+    trigger: ".volcan", //Le contenu de la classe devient la "zone de surveillance"
+    start: "top", // L'animation commence à 500px du haut de ".part3"
+    end: "bottom bottom", // Et s'arrete en bas de la classe
+    scrub: 0.5, // relie l'animation au scroll, ici 2 permet un effet "tu descends, je te rattrape"
+    markers : "true",
+    }
+})
+
 //----------------------------------Import------------------------
 
 import './style.css'
