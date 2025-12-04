@@ -24,6 +24,7 @@ gsap.to('.part3-nuee', { // Ne pas oublier d'indiquer ta classe css
     }
 })
 
+
 //----------------------------------Import------------------------
 
 import './style.css'
