@@ -24,6 +24,23 @@ gsap.to('.part3-nuee', { // Ne pas oublier d'indiquer ta classe css
     }
 })
 
+//----------------------section 1---------Sandra---------------
+
+gsap.to('.volcan', { 
+
+    // Propriétés d'animation
+
+
+   
+    // Conditions de déclenchements
+    scrollTrigger: {
+    trigger: ".volcan", 
+    start: "top", 
+    end: "bottom bottom", 
+    scrub: 0.5, 
+    markers : "true",
+    }
+})
 
 //----------------------------------Import------------------------
 
