@@ -13,23 +13,13 @@
     height: auto;
 }
 
-.volcanTrigger img {
-    width: 100%;
-    height: auto;
-    scale: 1;
-
-}
 
 .narration1 .volcan {
     width: 100%;
     height: auto;
-    scale: 0.5;
-    position: absolute;
-}
-
-.volcanTrigger {
-    display: flex;
-    align-items: flex-end;
+    scale: 4;
+    transform-origin: bottom center;
+    bottom: 0;
 }
 
 

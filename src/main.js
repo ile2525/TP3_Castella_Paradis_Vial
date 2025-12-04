@@ -17,8 +17,8 @@ gsap.to('.part3-nuee', { // Ne pas oublier d'indiquer ta classe css
     // Conditions de déclenchements
     scrollTrigger: {
     trigger: ".part3", //Le contenu de la classe devient la "zone de surveillance"
-    start: "top+=1080", // L'animation commence à 500px du haut de ".part3"
-    end: "bottom bottom", // Et s'arrete en bas de la classe
+    start: "top", // L'animation commence à 500px du haut de ".part3"
+    end: "bottom", // Et s'arrete en bas de la classe
     scrub: 2, // relie l'animation au scroll, ici 2 permet un effet "tu descends, je te rattrape"
     markers: true
     }
@@ -29,16 +29,16 @@ gsap.to('.part3-nuee', { // Ne pas oublier d'indiquer ta classe css
 gsap.to('.volcan', { 
 
     // Propriétés d'animation
-
+    scale : 1,
 
    
     // Conditions de déclenchements
     scrollTrigger: {
     trigger: ".volcan", 
-    start: "top", 
-    end: "bottom bottom", 
-    scrub: 0.5, 
-    markers : "true",
+    start: "top", // top=haut du trigger, +=400 décale e 400px vers le bas, bottom: par rapport au bas du viewport. animation: démarre lorsque le haut du volcan(+400px) touch le bas du viewport
+    end: "bottom top",
+    scrub: true, 
+    markers : true,
     }
 })
 
