@@ -1,51 +1,15 @@
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+//----------------------------------Import JS------------------------
+import { scrollAnimation } from "./scroll-trigger.js";
 
-gsap.registerPlugin(ScrollTrigger)
 
-// TUTO
-// Voici un exemple de fonctionnement :
 
-gsap.to('.part3-nuee', { // Ne pas oublier d'indiquer ta classe css
+scrollAnimation();
 
-    // Propriétés d'animation
-    opacity: 1, // Finit en opacité 1
-    y: 100, // Permet l'animation vers le bas
 
-   
-   
-    // Conditions de déclenchements
-    scrollTrigger: {
-    trigger: ".part3", //Le contenu de la classe devient la "zone de surveillance"
-    start: "top", // L'animation commence à 500px du haut de ".part3"
-    end: "bottom", // Et s'arrete en bas de la classe
-    scrub: 2, // relie l'animation au scroll, ici 2 permet un effet "tu descends, je te rattrape"
-    markers: true
-    }
-})
-
-//----------------------section 1---------Sandra---------------
-
-gsap.to('.volcan', { 
-
-    // Propriétés d'animation
-    scale : 1,
-
-   
-    // Conditions de déclenchements
-    scrollTrigger: {
-    trigger: ".volcan", 
-    start: "top", // top=haut du trigger, +=400 décale e 400px vers le bas, bottom: par rapport au bas du viewport. animation: démarre lorsque le haut du volcan(+400px) touch le bas du viewport
-    end: "bottom top",
-    scrub: true, 
-    markers : true,
-    }
-})
-
-//----------------------------------Import------------------------
+//----------------------------------Import CSS------------------------
 
 import './style.css'
-
-import './style-Section1.css'
+import './style-section1.css'
+import './style-section3.css'
 
 

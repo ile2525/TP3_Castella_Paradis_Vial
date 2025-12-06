@@ -8,18 +8,3 @@ body {
     height: 1000vh;
     overflow-x: hidden;
 }
-
-
-.part3-base {
-    width: 100%;
-}
-
-.part3-nuee {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0%;
-    left: 0;
-    opacity: 0;
-    scale: 1;
-}
