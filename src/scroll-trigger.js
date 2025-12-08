@@ -25,17 +25,18 @@ export function scrollAnimation() {
     })
 
     // -------------------- Section 3 - Ilé --------------------
+    // Besoin de la section 2 pour pouvoir finir
     gsap.to('.part3-nuee', {
 
         // Propriétés d'animation
         opacity: 1,
-        y: 100,
+        y: 500,
 
         // Conditions de déclenchements
         scrollTrigger: {
             trigger: ".part3",
-            start: "top",
-            end: "bottom",
+            start: "top bottom",
+            end: "bottom top",
             scrub: 2,
             markers: true
         }
