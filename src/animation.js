@@ -1,6 +1,8 @@
     const particuleContainer = document.getElementById("particule-container");
     const cendreMontante = document.getElementById("cendre-montante");
     
+    let hauteurCendreMontante = 0;
+
     export function spawnCendre() {
 
         // import de l'image
@@ -14,8 +16,7 @@
 
         particuleContainer.appendChild(cendre);
 
-        // suppression après 4 sec
-        setTimeout(() => cendre.remove(), 4000);
+        return cendre;
     }
 
     // boucle particules + montée
@@ -24,6 +25,6 @@
 
         if (hauteurCendreMontante < 100) {
             hauteurCendreMontante += 0.2;
-            cendreMontante.style.height = heapHeight + "vh";
+            cendreMontante.style.height = hauteurCendreMontante + "vh";
         }
     }, 150);
