@@ -12,31 +12,30 @@ export function scrollAnimation() {
     gsap.to('.volcan', {
 
         // Propriétés d'animation
-        scale: 1,
+        scale: 1.8,
 
 
         // Conditions de déclenchements
         scrollTrigger: {
             trigger: ".volcan",
-            start: "40% 75%",
-            end: "bottom 95%",
+            start: "top 40%",
+            end: "bottom 45%",
             scrub: 1,     //-----animation suit le scroll-----
             markers: true,
         }
     })
 
-    gsap.to([".v1", ".v2", ".v3"], {
+    gsap.to(".v1", {
         opacity: 1,
-        stagger: 0.5,   //-----images apparaissent en decalage de 0.3sec-----
 
         scrollTrigger: {
             trigger: ".volcan",
-            start: "bottom bottom",   //-----bas du volcan touche le bas du viewport
-            end: "bottom+=50vh bottom",
+            start: "center bottom",   //-----bas du volcan touche le bas du viewport
+            end: "85% 80%",
             scrub: true,
             pin: true,
             pinSpacing: false,
-            markers: true
+            //markers: true
         }
     })
 

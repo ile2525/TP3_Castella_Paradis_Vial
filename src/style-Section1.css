@@ -6,51 +6,51 @@
     overflow: hidden;
 }
 
-.narration1 {
+.part1 {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.narration1 img {
+.part1 img {
     position: absolute;
     width: 100%;
 }
 
-.narration1 .bg {
+.part1 .bg {
     z-index: 0;
     width: 100%;
     height: auto;
 }
 
-.narration1 .nuage {
+.part1 .nuage {
     z-index: 2;
     width: auto;
     height: auto;
 }
 
-.narration1 .n1{
+.part1 .n1{
     top: 16%;
     left: 16%;
 }
 
-.narration1 .n2{
+.part1 .n2{
     top: 32%;
     left: 46%;
 }
 
-.narration1 .n3{
+.part1 .n3{
     top: 32%;
     left: -2%;
     transform: rotate(-11deg);
 }
 
-.narration1 .n4{
+.part1 .n4{
     top: 51%;
     left: 66%;
 }
 
-.narration1 .volcan {
+.part1 .volcan {
     position: absolute;
     z-index: 10;
     width: 100%;
@@ -59,14 +59,14 @@
     bottom: 0;   /*-----ancré en bas------*/
 }
 
-.narration1 .ville {
+.part1 .ville {
     position: absolute;
     opacity: 0;
     bottom: 0;
     width: 100%;
 }
 
-.narration1 .v1 {
+.part1 .v1 {
     z-index: 12;
 }
 
@@ -74,8 +74,11 @@
     z-index: 14;
 }
 
-.narration1 .v3 {
+.part1 .v3 {
     z-index: 16;
 }
+
+
+/*------------------------media-queries-----mon cauchemar apparament---------------------------*/
 
 
