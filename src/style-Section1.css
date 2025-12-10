@@ -1,4 +1,11 @@
 /* -------------------- Section 1 - Sandra -------------------- */
+
+.partie1 {
+    position: relative;
+    height: 400vh;
+    overflow: hidden;
+}
+
 .narration1 img {
     width: 100%;
 }
