@@ -10,6 +10,8 @@
     position: relative;
     width: 100%;
     height: 100%;
+    /* background: rgba(255, 20, 243, 0.842); debug */
+
 }
 
 .narration {
@@ -25,7 +27,7 @@
     width: 100%;
 }
 
-.part1 .bg {
+.part1 .bgCiel {
     z-index: 0;
     width: 100%;
     height: auto;
@@ -65,10 +67,9 @@
 .part1 .volcan {
     position: absolute;
     z-index: 10;
-    width: 100%;
-    scale: 3.5;
-    transform-origin: bottom;
-    bottom: 8%;
+    bottom: 7%;
+    transform: scale(3.5);
+    transform-origin: bottom center;
 }
 
 .part1 .boxBottom {
@@ -76,7 +77,8 @@
     z-index: 11;
     width: 100%;
     height: 8%;
-    background-color: #6B8B6B;
+    background-color: #6b8b6b;
+    left: 0;
     bottom: 0;
 }
 
@@ -93,14 +95,21 @@
 
 .part1 .v1 {
     z-index: 12;
+    opacity: 0;
 }
 
-.narration1 .v2 {
+.part1 .v2 {
     z-index: 14;
+    opacity: 0;
 }
 
 .part1 .v3 {
     z-index: 16;
+    opacity: 0;
+}
+
+.part1 .nar3 {
+    opacity: 0;
 }
 
 
