@@ -2,7 +2,7 @@
 
 .partie1 {
     position: relative;
-    height: 450vh;
+    height: 280vh;
     overflow: hidden;
 }
 
@@ -67,8 +67,6 @@
     position: absolute;
     z-index: 10;
     width: 100%;
-    height: auto;
-    top: 84%;
     scale: 4;
     transform-origin: bottom center;
     bottom: 0;   /*-----ancré en bas------*/
@@ -77,7 +75,8 @@
 .narration1 .ville {
     position: absolute;
     opacity: 0;
-    top: 95%;
+    bottom: 0;
+    width: 100%;
 }
 
 .narration1 .v1 {

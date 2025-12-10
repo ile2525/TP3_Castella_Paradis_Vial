@@ -20,7 +20,7 @@ export function scrollAnimation() {
             trigger: ".volcan",
             start: "center center",
             end: "bottom bottom",
-            scrub: true,     //-----animation suit le scroll-----
+            scrub: 1,     //-----animation suit le scroll-----
             pin: true,     //-----arrête le scroll visuellement sur la section
             markers: true,
         }
