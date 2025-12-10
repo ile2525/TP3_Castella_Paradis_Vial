@@ -18,11 +18,25 @@ export function scrollAnimation() {
         // Conditions de déclenchements
         scrollTrigger: {
             trigger: ".volcan",
-            start: "center center",
-            end: "bottom bottom",
+            start: "40% 75%",
+            end: "bottom 95%",
             scrub: 1,     //-----animation suit le scroll-----
-            pin: true,     //-----arrête le scroll visuellement sur la section
             markers: true,
+        }
+    })
+
+    gsap.to([".v1", ".v2", ".v3"], {
+        opacity: 1,
+        stagger: 0.5,   //-----images apparaissent en decalage de 0.3sec-----
+
+        scrollTrigger: {
+            trigger: ".volcan",
+            start: "bottom bottom",   //-----bas du volcan touche le bas du viewport
+            end: "bottom+=50vh bottom",
+            scrub: true,
+            pin: true,
+            pinSpacing: false,
+            markers: true
         }
     })
 

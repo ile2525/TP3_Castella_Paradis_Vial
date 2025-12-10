@@ -2,7 +2,7 @@
 
 .partie1 {
     position: relative;
-    height: 280vh;
+    height: 300vh;
     overflow: hidden;
 }
 
@@ -18,15 +18,12 @@
 }
 
 .narration1 .bg {
-    position: absolute;
     z-index: 0;
     width: 100%;
     height: auto;
-
 }
 
 .narration1 .nuage {
-    position: absolute;
     z-index: 2;
     width: auto;
     height: auto;
@@ -53,22 +50,12 @@
     left: 66%;
 }
 
-.narration1 .oiseaux {
-    position: absolute;
-    z-index: 4;
-    width: auto;
-    height: auto;
-    top: 59%;
-    left: 80%;
-}
-
-
 .narration1 .volcan {
     position: absolute;
     z-index: 10;
     width: 100%;
-    scale: 4;
-    transform-origin: bottom center;
+    scale: 3.5;
+    transform-origin: bottom;
     bottom: 0;   /*-----ancré en bas------*/
 }
 
