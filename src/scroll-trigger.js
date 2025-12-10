@@ -60,29 +60,45 @@ export function scrollAnimation() {
     // -------------------- Section 4 - Ilé --------------------
 
     const cendreMontante = document.getElementById("cendre-montante");
-    
-ScrollTrigger.create({
-    trigger: ".partie4",
-    start: "top bottom",
-    end: "bottom top",
-    scrub: true,
-    markers: true,
+    const part4Base = document.querySelector(".part4-base");
 
-    onUpdate: (self) => {
-        // 1) Génère une particule
-        const particule = spawnCendre();
+    const timeline4 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".partie4",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true,
+            markers: true
+        }
+    });
 
-        // 2) Anime la particule
-        gsap.fromTo(particule, 
-            { opacity: 0 },
-            { y: 1920, opacity: 1, duration: 10, ease: "none" }
-        );
+    timeline4.fromTo(part4Base,
+        { scale: 2.5 },
+        { scale: 1, ease: "power1.out" }
+    )
 
-        // 3) Montée du tas de cendres
-        const progress = self.progress;
-        cendreMontante.style.height = (progress * 100) + "%";
-    }
-});
+    ScrollTrigger.create({
+        trigger: ".partie4",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+        markers: true,
+
+        onUpdate: (self) => {
+            // Génère une particule
+            const particule = spawnCendre();
+
+            // Anime la particule
+            gsap.fromTo(particule,
+                { opacity: 0 },
+                { y: 1920, opacity: 1, duration: 10, ease: "none" }
+            );
+
+            // Montée du tas de cendres
+            const progress = self.progress;
+            cendreMontante.style.height = (progress * 100) + "%";
+        }
+    });
 
 
 }
