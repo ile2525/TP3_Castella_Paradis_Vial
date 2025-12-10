@@ -60,32 +60,30 @@ export function scrollAnimation() {
 
     // -------------------- Section 4 - Ilé --------------------
 
-    const particuleContainer = document.getElementById("particule-container");
     const cendreMontante = document.getElementById("cendre-montante");
     
-    ScrollTrigger.create({
-        trigger: ".partie4",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true,
-        markers: true,
+ScrollTrigger.create({
+    trigger: ".partie4",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+    markers: true,
 
-        onUpdate: (self) => {
-            // Génération de cendre au scroll
-            const particule = spawnCendre(particuleContainer);
+    onUpdate: (self) => {
+        // 1) Génère une particule
+        const particule = spawnCendre();
 
-            gsap.from(particule, {
-                y: -200,
-                opacity: 0,
-                duration: 2,
-                ease: "none"
-            });
+        // 2) Anime la particule
+        gsap.fromTo(particule, 
+            { opacity: 0 },
+            { y: 1920, opacity: 1, duration: 10, ease: "none" }
+        );
 
-            // montée du tas de cendres
-            const monte = self.progress; // 0 -> 1
-           cendreMontante.style.height = (monte * 100) + "vh";
-        }
-    });
+        // 3) Montée du tas de cendres
+        const progress = self.progress;
+        cendreMontante.style.height = (progress * 100) + "%";
+    }
+});
 
 
 }

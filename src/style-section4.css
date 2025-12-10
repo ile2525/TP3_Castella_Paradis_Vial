@@ -1,11 +1,23 @@
+.partie4 {
+position: relative;
+}
+
 .part4-base {
     width: 100%;
+    display: block;
 }
 
 .cendre {
     width: 24px;
     position: absolute;
-    animation: chuteCendre 5s linear forwards;
+}
+
+#cendre-montante {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, #3a3737, #3a3737d9, transparent); 
 }
 
 
@@ -16,23 +28,3 @@
 }
 
 
-#cendre-montante {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-    background: linear-gradient(to top, #343232, #343232, #281C17); /*Whyyy ca ne marche passsss*/
-    transition: height 0.3s linear;
-}
-
-@keyframes chuteCendre {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    to {
-        transform: translateY(100vh);
-        opacity: 0.2;
-    }
-}
