@@ -8,12 +8,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 export function scrollAnimation() {
 
-    // -------------------- Section 1 - Sandra --------------------
+    // -------------------- Section 1 - Sandra --------------------------------------------------------------
     gsap.to('.volcan', {
 
         // Propriétés d'animation
         scale: 1.8,
-
 
         // Conditions de déclenchements
         scrollTrigger: {
@@ -21,16 +20,16 @@ export function scrollAnimation() {
             start: "top 40%",
             end: "bottom 45%",
             scrub: 1,     //-----animation suit le scroll-----
-            markers: true,
+            //markers: true,
         }
     })
 
     gsap.to(".v1", {
-        opacity: 1,
+        opacity: 0.1,
 
         scrollTrigger: {
             trigger: ".volcan",
-            start: "center bottom",   //-----bas du volcan touche le bas du viewport
+            start: "center bottom",
             end: "85% 80%",
             scrub: true,
             pin: true,
@@ -39,7 +38,7 @@ export function scrollAnimation() {
         }
     })
 
-    // -------------------- Section 3 - Ilé --------------------
+    // -------------------- Section 3 - Ilé ---------------------------------------------------------------------
     // Besoin de la section 2 pour pouvoir finir
     gsap.to('.part3-nuee', {
 
