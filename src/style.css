@@ -8,3 +8,9 @@ body {
     height: 1000vh;
     overflow-x: hidden;
 }
+
+p {
+    font-family: "Gentium-plus";
+    font-size: 2rem;
+    font-weight: bold;
+}
