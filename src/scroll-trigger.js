@@ -17,9 +17,10 @@ export function scrollAnimation() {
         // Conditions de déclenchements
         scrollTrigger: {
             trigger: ".volcan",
-            start: "top", // top=haut du trigger, +=400 décale e 400px vers le bas, bottom: par rapport au bas du viewport. animation: démarre lorsque le haut du volcan(+400px) touch le bas du viewport
-            end: "bottom top",
-            scrub: true,
+            start: "center center",
+            end: "bottom bottom",
+            scrub: true,     //-----animation suit le scroll-----
+            pin: true,     //-----arrête le scroll visuellement sur la section
             markers: true,
         }
     })
