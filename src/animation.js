@@ -1,4 +1,3 @@
-  
 export function spawnCendre() {
     const particuleContainer = document.getElementById("particule-container");
 
