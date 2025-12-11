@@ -108,7 +108,7 @@ const timeline1C = gsap.timeline({
         start: "20% top",
         end: "95% bottom",
         scrub: 1,
-        markers: true
+        //markers: true
     }
 });
 // ------Apparition du panache ------
@@ -120,19 +120,23 @@ timeline1C.fromTo(".panache2",
 //-----mouvement vers le haut------------------
 const timeline1D = gsap.timeline({
     scrollTrigger: {
-        trigger: ".boxBottom",  // nouveau trigger
-        start: "top bottom",     // quand le trigger touche le bas du viewport
-        end: "bottom bottom",    // fin du mouvement
-        scrub: true,
-        //markers: true
+        trigger: ".ville2",
+        start: "40% top",
+        end: "bottom center",
+        scrub: 1,
+        markers: true
     }
 });
-
-// Déplacement du panache vers le bas (ou remontée si tu mets négatif)
-timeline1D.to(".panache", {
-    yPercent: 200,    // descend de 200% de sa hauteur
+//-----mouvement panache-----
+timeline1D.to(".panache2", {
+    yPercent: 150,
     ease: "none"
 });
+//-----mouvement ville------
+timeline1D.to(".ville2", {
+    yPercent: 200, 
+    ease: "none"
+}, "<");       // "<" = commence en même temps que le panache2
 
 
 
