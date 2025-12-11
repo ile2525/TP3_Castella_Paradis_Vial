@@ -152,3 +152,30 @@
 /*------------------------media-queries-----mon cauchemar apparament---------------------------*/
 
 
+@media (max-width: 300px) {
+
+    .narration {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 0.9em;
+    }
+
+    .part1 .nar1 {
+        top: 10%;
+    }
+
+    .part1 .nar2 {
+        top: 60%;   /*------- Remonter le texte----*/
+    }
+
+    .cracks {
+        max-width: 90%;
+        left: 50%;
+        transform: translateX(-50%); 
+        top: 40%;
+    }
+
+
+    }
+
+
