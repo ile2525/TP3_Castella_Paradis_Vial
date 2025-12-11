@@ -63,25 +63,76 @@ export function scrollAnimation() {
             //markers: true
         }
     })
-    //-----apparition cracks --------------------
-    const tl = gsap.timeline({
+
+    //-----apparition cracks timeline --------------------
+
+    const timeline1A = gsap.timeline({
+
         //-----trigger-----
     scrollTrigger: {
         trigger: ".balcon",
         start: "center bottom",
         end: "bottom center",
         scrub: 1,
-        markers: true
+        //markers: true
     }
 });
 //-----apparition cracks -----
-tl.fromTo(".cracks", 
+timeline1A.fromTo(".cracks", 
     { opacity: 0 },
     { opacity: 1, duration: 1 }
 );
 
+//-----apparition ville  timeline----------------------
+    const timeline1B = gsap.timeline({
 
+        //-----trigger-----
+    scrollTrigger: {
+        trigger: ".boxTransition2",
+        start: "20% top",
+        end: "bottom center",
+        scrub: 1,
+        //markers: true
+    }
+});
+//-----apparition ville -----
+timeline1B.fromTo(".ville2", 
+    { opacity: 0 },
+    { opacity: 1, duration: 1 }
+);
 
+//-----apparition panache ----------------------
+const timeline1C = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".ville2",
+        start: "20% top",
+        end: "95% bottom",
+        scrub: 1,
+        markers: true
+    }
+});
+// ------Apparition du panache ------
+timeline1C.fromTo(".panache2",
+    { opacity: 0 },
+    { opacity: 1, duration: 1 }
+);
+
+//-----mouvement vers le haut------------------
+const timeline1D = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".boxBottom",  // nouveau trigger
+        start: "top bottom",     // quand le trigger touche le bas du viewport
+        end: "bottom bottom",    // fin du mouvement
+        scrub: true,
+        //markers: true
+    }
+});
+
+// Déplacement du panache vers le bas (ou remontée si tu mets négatif)
+timeline1D.to(".panache", {
+    yPercent: 200,    // descend de 200% de sa hauteur
+    ease: "none"
+});
 
 
 
@@ -99,7 +150,7 @@ gsap.to('.part3-base', {
         start: "top 10%",
         end: "bottom top",
         scrub: true,
-        markers: true
+       // markers: true
     }
 });
 
@@ -111,7 +162,7 @@ gsap.to('.part3-base', {
             start: "top bottom",
             end: "bottom top",
             scrub: 2,
-            markers: true,
+            //markers: true,
 
         }
     });
@@ -128,7 +179,7 @@ gsap.to('.part3-base', {
             start: "top 80%",
             end: "bottom 20%",
             scrub: true,
-            markers: true
+            //markers: true
         }
     });
 
@@ -144,7 +195,7 @@ gsap.to('.part3-base', {
         start: "top bottom",
         end: "bottom top",
         scrub: true,
-        markers: true,
+        //markers: true,
 
         onUpdate: (self) => {
             // Génère une particule

@@ -3,7 +3,7 @@
 .partie2 {
     position: relative;
     width: 100vw;
-    height: 3105px;
+    height: 300vh;
 }
 
 .part2 {
@@ -22,14 +22,30 @@
 .nar4 {
     position: absolute;
     z-index: 26;
-    top: 20%;
+    top: 15%;
     opacity: 1;
     color: aliceblue;
 }
 
-.part2 img {
+.part2 .bgCiel2 {
     position: relative;
     width: 100%;
+}
+
+.ville2 {
+    position: absolute;
+    z-index: 30;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+
+.part2 .panache2 {
+    position: absolute;
+    z-index: 29;
+    width: 100%;
+    opacity: 0.1;
+    top: -61%;
 }
 
 
