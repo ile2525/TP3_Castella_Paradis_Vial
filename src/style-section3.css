@@ -1,21 +1,29 @@
 .partie3 {
   position: relative;
-  overflow: hidden;
+  z-index: 60;
 }
 
 .part3-base {
     width: 100%;
     display: block;
     position: relative;
-    padding-bottom: 300px;
+    z-index: 30;
 }
 
 .part3-nuee {
     position: absolute;
-    z-index: 10;
+    z-index: 40;
     opacity: 0;
     top: -60%;
     left: 0;
     width: 100%;
+}
+
+.part3-narration1{
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    opacity: 1;
+    color: aliceblue;
 }
 

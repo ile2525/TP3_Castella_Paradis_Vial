@@ -153,7 +153,7 @@ timeline1D.fromTo(".villeSombre",
     // -------------------- Section 3 - Ilé ---------------------------------------------------------------------
 
 gsap.to('.part3-base', {
-    scale: 2, 
+    scale: 1.5, 
     x: "-10%",         
     ease: "power1.out",
     scrollTrigger: {

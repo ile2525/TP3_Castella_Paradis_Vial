@@ -1,6 +1,7 @@
 .partie4 {
     position: relative;
     min-height: 100vh;
+    z-index: 70;
 }
 
 .part4-base {
