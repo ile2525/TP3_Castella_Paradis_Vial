@@ -11,7 +11,7 @@ export function scrollAnimation() {
     // -------------------- Section 1 - Sandra --------------------------------------------------------------
 
     //-----scale volcan-------------------------------
-       gsap.to('.volcan', {
+    gsap.to('.volcan', {
 
         // Propriétés d'animation
         scale: 1.2,
@@ -32,73 +32,73 @@ export function scrollAnimation() {
         scrollTrigger: {
             trigger: ".boxBottom",
             start: "top bottom",
-            end: "bottom bottom",
+            end: "bottom center",
             scrub: true,
             //markers: true
         }
     })
 
-//-----apparition plan 2 et narration 2----------------------------------------
+    //-----apparition plan 2 et narration 2----------------------------------------
     gsap.to([".v2", ".nar2"], {
         opacity: 1,
 
         scrollTrigger: {
             trigger: ".boxBottom",
-            start: "+=50% bottom",
-            end: "+=10% bottom",
+            start: "top 80%",
+            end: "bottom center",
             scrub: true,
             //markers: true
         }
     })
     //-----apparition premier plan ------------------
-        gsap.to(".v3", {
+    gsap.to(".v3", {
         opacity: 1,
         scale: 1,
 
         scrollTrigger: {
             trigger: ".boxBottom",
-            start: "+=70% 95%",
-            end: "bottom bottom",
+            start: "top 60%",
+            end: "bottom center",
             scrub: true,
             //markers: true
         }
     })
     //-----fadeout-------------------------
     gsap.to(".fadeout", {
-  opacity: 0.8,
+        opacity: 0.8,
 
-  scrollTrigger: {
-    trigger: ".balcon",
-    start: "top bottom", 
-    end: "+=25% bottom",
-    scrub: true,
-    markers: true
-  }
-})
-//-----narration3 sur fadeout---------------------------------ca marche pas--------------
+        scrollTrigger: {
+            trigger: ".balcon",
+            start: "top bottom",
+            end: "+=25% bottom",
+            scrub: true,
+            markers: true
+        }
+    })
+    //-----narration3 sur fadeout---------------------------------ca marche pas--------------
     gsap.to(".narration nar3", {
-  opacity: 1,
+        opacity: 1,
 
-  scrollTrigger: {
-    trigger: ".balcon",
-    start: "top bottom", 
-    end: "+=25% bottom",
-    scrub: true,
-    markers: true
-  }
-})
+        scrollTrigger: {
+            trigger: ".balcon",
+            start: "top bottom",
+            end: "+=25% bottom",
+            scrub: true,
+            markers: true
+        }
+    })
     //-----fadin-------------------------
     gsap.to(".fadeout", {
-  opacity: 0,
+        opacity: 0,
 
-  scrollTrigger: {
-    trigger: ".balcon",
-    start: "top bottom", 
-    end: "center bottom",
-    scrub: true,
-    markers: true
-  }
-})
+        scrollTrigger: {
+            trigger: ".balcon",
+            start: "top bottom",
+            end: "center bottom",
+            scrub: true,
+            markers: true
+        }
+    })
 
 
 
@@ -107,28 +107,33 @@ export function scrollAnimation() {
 
 
     // -------------------- Section 3 - Ilé ---------------------------------------------------------------------
-    
 
-
-
+gsap.to('.part3-base', {
+    scale: 2, 
+    x: "-10%",         
+    ease: "power1.out",
+    scrollTrigger: {
+        trigger: ".partie3",
+        start: "top 10%",
+        end: "bottom top",
+        scrub: true,
+        markers: true
+    }
+});
 
     gsap.to('.part3-nuee', {
-
-        // Propriétés d'animation
         opacity: 1,
-        y: 500,
-
-        // Conditions de déclenchements
+        y: 1500,
         scrollTrigger: {
-            trigger: ".part3",
+            trigger: ".partie3",
             start: "top bottom",
             end: "bottom top",
             scrub: 2,
-            //markers: true
-        }
+            markers: true,
 
-        
-    })
+        }
+    });
+
 
     // -------------------- Section 4 - Ilé --------------------
 
@@ -138,22 +143,24 @@ export function scrollAnimation() {
     const timeline4 = gsap.timeline({
         scrollTrigger: {
             trigger: ".partie4",
-            start: "top bottom",
-            end: "bottom ",
+            start: "top 80%",
+            end: "bottom 20%",
             scrub: true,
             markers: true
         }
     });
 
     timeline4.fromTo(part4Base,
-        { scale: 5},
+        {
+            scale: 2
+        },
         { scale: 1, ease: "power1.out" }
     )
 
     ScrollTrigger.create({
         trigger: ".partie4",
         start: "top bottom",
-        end: "bottom -=200",
+        end: "bottom top",
         scrub: true,
         markers: true,
 
@@ -163,8 +170,8 @@ export function scrollAnimation() {
 
             // Anime la particule
             gsap.fromTo(particule,
-                { opacity: 0 },
-                { y: 1920, opacity: 1, duration: 10, ease: "none", scale: 1.5}
+                { opacity: 0, y: 0 },
+                { y: 900, opacity: 1, duration: 10, ease: "none", scale: 1.5 }
             );
 
             // Montée du tas de cendres
