@@ -160,7 +160,7 @@ gsap.to('.part3-base', {
         start: "top 10%",
         end: "bottom top",
         scrub: true,
-        markers: true
+        // markers: true
     }
 });
 
@@ -203,7 +203,7 @@ gsap.to('.part3-base', {
         start: "top bottom",
         end: "bottom top",
         scrub: true,
-        markers: true,
+        // markers: true,
 
         onUpdate: (self) => {
             // Génère une particule
