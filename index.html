@@ -1,107 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volcanorama</title>
 
-  <!-- ----------import de police google------------ -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-
-  <title>La catastrophe de Pompei</title>
-</head>
-
+    </head>
 <body>
+    
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/Accueil/logo-volcanoramaNoBG.png" alt="Volcanorama Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Carte des volcans</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">support</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- -------------------- Section 1 - Sandra -------------------- -->
-  <section class="partie1">
-    <div class="part1">
+    <main class="hero-section">
+        
+        <div class="hero-content-wrapper">
+            
+            <div class="volcan-image-container">
+                <img class="volcan-image" src="img/Accueil/VolcanHero.png" alt="Illustration de volcan en éruption">
+            </div>
 
-      <img class="bgCiel" src="img/sequence1/00BGCiel.svg" alt="fondCiel">
+            <div class="texte">
+                <h2>Les volcans : montagnes colériques !</h2>
+                <p class="sous-titre">un site dédié aux volcans du monde</p>
 
-      <p class="narration nar1">Nous sommes à Pompéi en Italie </br> en l'an 62 après Jésus Christ </p>
+                <div class="boxici">
+                    <p class="title">Vésuve : la catastrophe de 79 après J-C</p>
+                    <a href="pompei.html" class="btn-ici">C'est par ici !</a>
+                </div>
+            </div>
 
-      <img class="nuage n1" src="img/sequence1/01nuage.svg" alt="nuage1">
-      <img class="nuage n2" src="img/sequence1/02nuage.svg" alt="nuage2">
-      <img class="nuage n3" src="img/sequence1/03nuage.svg" alt="nuage3">
-      <img class="nuage n4" src="img/sequence1/04nuage.svg" alt="nuage4">
-
-
-      <img class="volcan" src="img/sequence1/06volcan.svg" alt="volcan">
-
-      <div class="boxBottom" ></div>
-
-      <p class="narration nar2">Les habitants ne savaient même pas que le Vésuve était un volcan. Il semblait être une
-        montagne ordinaire...</p>
-
-      <img class="ville v1" src="img/sequence1/07plan3.svg" alt="villeplan3">
-      <img class="ville v2" src="img/sequence1/08plan2.svg" alt="villeplan2">
-      <img class="ville v3" src="img/sequence1/09plan1ville.svg" alt="villePremierPlan">
-
-    </div>
-  </section>
-
-  <!-- -------------------- Section 1.1 -------balcon-------Sandra -------------------- -->
-  <section class="partie11" >
-    <div class="part11" >
-
-      <div class="boxTransition" ></div>
-      <p class="narration nar3">Il y eut un très grand tremblement de terre qui endommagea la ville. Personne ne se
-        doutait que les secousses seraient des précurseurs d'une grande catastrophe. </p>
-
-      <img class="balcon" src="img/sequence1/10balcon.svg" alt="vueBalcon">
-      <img class="cracks" src="img/sequence1/12craquelures.svg" alt="craquelures">
-
-    </div>
-  </section>
-
-    <!-- -------------------- Section 2 - Sandra -------------------- -->
-  <section class="partie2" >
-    <div class="part2">
-
-      <div class="boxTransition2" ></div>
-      <p class="narration nar4" >Pompéi, l’an 79 après J-C </br> Depuis le séisme de 62, les secousses sont courantes... mais personne ne s’inquiète...</p>
-
-      <img src="img/sequence2/ciel2.svg" alt="fondBleuCiel">
-      <div>espace</div>
-
-
-    </div>
-  </section>
-
-      <!-- -------------------- Section 2.2 - Sandra -------------------- -->
-  <section class="partie22" >
-    <div class="part22">
-
-       <img src="img/sequence2/22nuages01.svg" alt="fondBleuCiel">
-       <img src="img/sequence2/22sol02.svg" alt="">
-       <img src="img/sequence2/22batisse03.svg" alt="">
-       <div class="boxTransition22" ></div>
-       <div>espace</div>
-
-
-    </div>
-  </section>
-
-  <!-- -------------------- Section 3 - Ilé -------------------- -->
-  <section class="partie3">
-      <img class="part3-base" src="img/elem-base/part3.png" alt="fond3">
-      <img class="part3-nuee" src="img/elem-anime/nuee-ardente/nuee-ardante.png" alt="nuée">
-  </section>
-
-  <!-- -------------------- Section 4 - Ilé -------------------- -->
-  <section class="partie4">
-    <img class="part4-base" src="img/elem-base/avant-cendre.svg" alt="ville">
-    <div id="particule-container"></div>
-    <div id="cendre-montante"></div>
-  </section>
-
-
-  <script type="module" src="/src/main.js"></script>
+        </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
 </body>
-
 </html>
