@@ -1,0 +1,19 @@
+//-----test timeline-----------------
+    gsap.registerPlugin(ScrollTrigger);
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".n2",
+    start: "top top",
+    end: "+=200% 20%",
+    scrub: true,
+    markers: true
+  }
+});
+//-----scale du volcan-----
+tl.to(".volcan", { scale: 1.2, duration: 5});
+
+//-----Apparition des plans de ville-----
+tl.to(".v1", { opacity: 1, duration: 2 }, "-=0.5"); // chevauche légèrement
+tl.to(".v2", { opacity: 1, duration: 3 }, "-=0.5");
+tl.to(".v3", { opacity: 1, duration: 4 }, "-=0.5");

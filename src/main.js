@@ -11,6 +11,7 @@ scrollAnimation();
 import './style.css'
 import './style-section1.css'
 import './style-section2.css'
+import './style-section2-5.css'
 import './style-section3.css'
 import './style-section4.css'
 

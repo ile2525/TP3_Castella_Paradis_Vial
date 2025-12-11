@@ -9,34 +9,61 @@ gsap.registerPlugin(ScrollTrigger);
 export function scrollAnimation() {
 
     // -------------------- Section 1 - Sandra --------------------------------------------------------------
-    gsap.to('.volcan', {
+
+    //-----scale volcan-------------------------------
+       gsap.to('.volcan', {
 
         // Propriétés d'animation
-        scale: 1.8,
+        scale: 1.2,
 
         // Conditions de déclenchements
         scrollTrigger: {
-            trigger: ".volcan",
-            start: "top 40%",
-            end: "bottom 45%",
-            scrub: 1,     //-----animation suit le scroll-----
-            //markers: true,
+            trigger: ".n2",
+            start: "top 10%",
+            end: "+=625% 20%",
+            scrub: true,
+            markers: true
         }
     })
-
+    //-----apparition plan 3----------------------------------------------------------
     gsap.to(".v1", {
-        opacity: 0.1,
+        opacity: 1,
 
         scrollTrigger: {
-            trigger: ".volcan",
-            start: "center bottom",
-            end: "85% 80%",
+            trigger: ".boxBottom",
+            start: "top bottom",
+            end: "bottom bottom",
             scrub: true,
-            pin: true,
-            pinSpacing: false,
-            //markers: true
+            markers: true
         }
     })
+
+//-----apparition plan 2 ----------------------------------------
+    gsap.to(".v2", {
+        opacity: 1,
+
+        scrollTrigger: {
+            trigger: ".boxBottom",
+            start: "+=50% bottom",
+            end: "bottom bottom",
+            scrub: true,
+            markers: true
+        }
+    })
+    //-----apparition premier plan ------------------
+        gsap.to(".v3", {
+        opacity: 1,
+
+        scrollTrigger: {
+            trigger: ".boxBottom",
+            start: "+=80% bottom",
+            end: "bottom bottom",
+            scrub: true,
+            markers: true
+        }
+    })
+
+
 
     // -------------------- Section 3 - Ilé ---------------------------------------------------------------------
     // Besoin de la section 2 pour pouvoir finir
@@ -52,7 +79,7 @@ export function scrollAnimation() {
             start: "top bottom",
             end: "bottom top",
             scrub: 2,
-            markers: true
+            //markers: true
         }
     })
 
