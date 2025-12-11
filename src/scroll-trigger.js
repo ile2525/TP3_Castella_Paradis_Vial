@@ -65,17 +65,43 @@ export function scrollAnimation() {
     })
     //-----fadeout-------------------------
     gsap.to(".fadeout", {
-  opacity: 0.7,
+  opacity: 0.8,
 
   scrollTrigger: {
-    trigger: ".v3",
-    start: "50% 70%", 
-    end: "-=70% bottom",
+    trigger: ".balcon",
+    start: "top bottom", 
+    end: "+=25% bottom",
     scrub: true,
     markers: true
   }
 })
-//-----narration3 sur fadeout----------------
+//-----narration3 sur fadeout---------------------------------ca marche pas--------------
+    gsap.to(".narration nar3", {
+  opacity: 1,
+
+  scrollTrigger: {
+    trigger: ".balcon",
+    start: "top bottom", 
+    end: "+=25% bottom",
+    scrub: true,
+    markers: true
+  }
+})
+    //-----fadin-------------------------
+    gsap.to(".fadeout", {
+  opacity: 0,
+
+  scrollTrigger: {
+    trigger: ".balcon",
+    start: "top bottom", 
+    end: "center bottom",
+    scrub: true,
+    markers: true
+  }
+})
+
+
+
 
 
 
