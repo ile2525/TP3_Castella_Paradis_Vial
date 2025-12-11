@@ -10,3 +10,12 @@ export function spawnCendre() {
     particuleContainer.appendChild(cendre);
     return cendre;
 }
+
+//-------------------essai class ---------------
+ 
+class Cendre {
+    constructor (posX, posY) {
+        this.posX = 0;
+        this.posY = 0;
+    }
+}
