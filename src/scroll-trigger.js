@@ -66,7 +66,11 @@ export function scrollAnimation() {
 
 
     // -------------------- Section 3 - Ilé ---------------------------------------------------------------------
-    // Besoin de la section 2 pour pouvoir finir
+    
+
+
+
+
     gsap.to('.part3-nuee', {
 
         // Propriétés d'animation
@@ -81,6 +85,8 @@ export function scrollAnimation() {
             scrub: 2,
             //markers: true
         }
+
+        
     })
 
     // -------------------- Section 4 - Ilé --------------------
@@ -92,21 +98,21 @@ export function scrollAnimation() {
         scrollTrigger: {
             trigger: ".partie4",
             start: "top bottom",
-            end: "bottom top",
+            end: "bottom ",
             scrub: true,
             markers: true
         }
     });
 
     timeline4.fromTo(part4Base,
-        { scale: 2.5 },
+        { scale: 5},
         { scale: 1, ease: "power1.out" }
     )
 
     ScrollTrigger.create({
         trigger: ".partie4",
         start: "top bottom",
-        end: "bottom top",
+        end: "bottom -=200",
         scrub: true,
         markers: true,
 
@@ -117,7 +123,7 @@ export function scrollAnimation() {
             // Anime la particule
             gsap.fromTo(particule,
                 { opacity: 0 },
-                { y: 1920, opacity: 1, duration: 10, ease: "none" }
+                { y: 1920, opacity: 1, duration: 10, ease: "none", scale: 1.5}
             );
 
             // Montée du tas de cendres
@@ -125,7 +131,5 @@ export function scrollAnimation() {
             cendreMontante.style.height = (progress * 100) + "%";
         }
     });
-
-
 }
 
