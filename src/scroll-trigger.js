@@ -122,14 +122,15 @@ const timeline1D = gsap.timeline({
     scrollTrigger: {
         trigger: ".ville2",
         start: "40% top",
-        end: "bottom center",
+        end: "90% top",
         scrub: 1,
-        markers: true
+        pin: true,
+        //markers: true
     }
 });
 //-----mouvement panache-----
 timeline1D.to(".panache2", {
-    yPercent: 150,
+    yPercent: 130,
     ease: "none"
 });
 //-----mouvement ville------
