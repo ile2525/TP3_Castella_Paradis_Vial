@@ -11,11 +11,3 @@ export function spawnCendre() {
     return cendre;
 }
 
-//-------------------essai class ---------------
- 
-// class Cendre {
-//     constructor (posX, posY) {
-//         this.posX = 0;
-//         this.posY = 0;
-//     }
-// }
