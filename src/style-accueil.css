@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #CCFAFF;
+    background-color: #CCFAFF;   /*---#CCFAFF---*/
     width: 100%;
     height: 100%;
 }
@@ -74,14 +74,14 @@ body {
 }
 
 .texte h2 {
-  font-size: 2rem; 
-  margin-bottom: 0.6rem; 
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
 }
 
 .sous-titre {
   font-weight: 400;
-  margin-bottom: 1.8rem; 
-  font-size: 1.1rem; 
+  margin-bottom: 1.8rem;
+  font-size: 1.1rem;
 }
 
 .boxici .title {
@@ -99,7 +99,7 @@ body {
   transition: text-decoration 0.3s ease;
   cursor: pointer;
   padding: 1rem 1.5rem;
-  border-radius: 1.8rem; 
+  border-radius: 1.8rem;
   display: inline-block;
 }
 

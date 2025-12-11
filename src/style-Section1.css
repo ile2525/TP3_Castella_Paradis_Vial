@@ -4,6 +4,7 @@
 .partie1 {
     position: relative;
     height: 300vh;
+    width: 100vw;
 }
 
 .part1 {
@@ -27,12 +28,6 @@
     width: 100%;
 }
 
-.part1 .bgCiel {
-    z-index: 0;
-    width: 100%;
-    height: auto;
-}
-
 .part1 .nar0 {
     top: 3%;
     color: #F3EBEB;
@@ -45,26 +40,25 @@
 .part1 .nuage {
     z-index: 2;
     width: auto;
-    height: auto;
 }
 
-.part1 .n1{
+.part1 .n1 {
     top: 16%;
     left: 16%;
 }
 
-.part1 .n2{
+.part1 .n2 {
     top: 32%;
     left: 46%;
 }
 
-.part1 .n3{
+.part1 .n3 {
     top: 32%;
     left: -2%;
     transform: rotate(-11deg);
 }
 
-.part1 .n4{
+.part1 .n4 {
     top: 51%;
     left: 66%;
 }
@@ -157,7 +151,7 @@
 /*------------------------media-queries-----mon cauchemar apparament---------------------------*/
 
 
-@media (max-width: 300px) {
+@media screen and (width <=768px) {
 
     .narration {
         width: 90%;
@@ -165,22 +159,21 @@
         font-size: 0.9em;
     }
 
-    .part1 .nar1 {
-        top: 10%;
+    .part1 .nuage {
+        z-index: 2;
+        width: 70%;
     }
 
-    .part1 .nar2 {
-        top: 60%;   /*------- Remonter le texte----*/
+    /*-----ajuster scale volcan-----*/
+
+    .part11 {
+        position: relative;
+        width: 100vw;
+        height: 140vh;
     }
 
     .cracks {
-        max-width: 90%;
-        left: 50%;
-        transform: translateX(-50%); 
-        top: 40%;
+        top: 79%;
     }
 
-
-    }
-
-
+}
