@@ -22,7 +22,7 @@ export function scrollAnimation() {
             start: "top 10%",
             end: "+=625% 20%",
             scrub: true,
-            markers: true
+            //markers: true
         }
     })
     //-----apparition plan 3----------------------------------------------------------
@@ -34,34 +34,75 @@ export function scrollAnimation() {
             start: "top bottom",
             end: "bottom bottom",
             scrub: true,
-            markers: true
+            //markers: true
         }
     })
 
-//-----apparition plan 2 ----------------------------------------
-    gsap.to(".v2", {
+//-----apparition plan 2 et narration 2----------------------------------------
+    gsap.to([".v2", ".nar2"], {
         opacity: 1,
 
         scrollTrigger: {
             trigger: ".boxBottom",
             start: "+=50% bottom",
-            end: "bottom bottom",
+            end: "+=10% bottom",
             scrub: true,
-            markers: true
+            //markers: true
         }
     })
     //-----apparition premier plan ------------------
         gsap.to(".v3", {
         opacity: 1,
+        scale: 1,
 
         scrollTrigger: {
             trigger: ".boxBottom",
-            start: "+=80% bottom",
+            start: "+=70% 95%",
             end: "bottom bottom",
             scrub: true,
-            markers: true
+            //markers: true
         }
     })
+    //-----fadeout-------------------------
+    gsap.to(".fadeout", {
+  opacity: 0.8,
+
+  scrollTrigger: {
+    trigger: ".balcon",
+    start: "top bottom", 
+    end: "+=25% bottom",
+    scrub: true,
+    markers: true
+  }
+})
+//-----narration3 sur fadeout---------------------------------ca marche pas--------------
+    gsap.to(".narration nar3", {
+  opacity: 1,
+
+  scrollTrigger: {
+    trigger: ".balcon",
+    start: "top bottom", 
+    end: "+=25% bottom",
+    scrub: true,
+    markers: true
+  }
+})
+    //-----fadin-------------------------
+    gsap.to(".fadeout", {
+  opacity: 0,
+
+  scrollTrigger: {
+    trigger: ".balcon",
+    start: "top bottom", 
+    end: "center bottom",
+    scrub: true,
+    markers: true
+  }
+})
+
+
+
+
 
 
 
