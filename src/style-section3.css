@@ -1,11 +1,21 @@
-/* -------------------- Section 3 - Ilé -------------------- */
+.partie3 {
+  position: relative;
+  overflow: hidden;
+}
+
 .part3-base {
     width: 100%;
+    display: block;
+    position: relative;
+    padding-bottom: 300px;
 }
 
 .part3-nuee {
-    width: 100%;
     position: absolute;
-    left: 0;
+    z-index: 10;
     opacity: 0;
+    top: -60%;
+    left: 0;
+    width: 100%;
 }
+
