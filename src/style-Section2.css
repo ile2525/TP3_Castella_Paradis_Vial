@@ -3,7 +3,7 @@
 .partie2 {
     position: relative;
     width: 100vw;
-    height: 300vh;
+    height: 400vh;
 }
 
 .part2 {
@@ -41,41 +41,24 @@
     opacity: 0;
 }
 
-.part2 .panache2 {
+ .panache2 {
     position: absolute;
     z-index: 29;
     width: 100%;
     opacity: 0.1;
-    top: -61%;
+    top: -50%;
 }
 
-
-
-/* -------------------- Section 2 - Sandra -------------------- */
-
-.partie22 {
-    position: relative;
+.villeSombre {
+    position: absolute;
+    top: 58%;
+    z-index: 39;
     width: 100vw;
-    height: 3105px;
+    opacity: 0.5;
 }
 
-.part22 {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
 
-.part22 img {
-    position: relative;
-    width: 100%;
-}
 
-.boxTransition22 {
-    position: relative;
-    width: 100%;
-    height: 110vh;
-    background-color: #87cfa8;
-}
 
 
 /*------------------------media-queries-----mon cauchemar apparament---------------------------*/

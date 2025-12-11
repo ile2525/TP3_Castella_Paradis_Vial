@@ -122,22 +122,28 @@ const timeline1D = gsap.timeline({
     scrollTrigger: {
         trigger: ".ville2",
         start: "40% top",
-        end: "90% top",
+        end: "bottom 10%",
         scrub: 1,
-        pin: true,
         //markers: true
     }
 });
 //-----mouvement panache-----
-timeline1D.to(".panache2", {
-    yPercent: 130,
+timeline1D.to(".panache2", 
+    { yPercent: 130,
     ease: "none"
 });
 //-----mouvement ville------
 timeline1D.to(".ville2", {
     yPercent: 200, 
     ease: "none"
-}, "<");       // "<" = commence en même temps que le panache2
+}, "<");       //-----"<" = commence en même temps que le panache2
+
+//-----apparition ville sombre ------
+timeline1D.fromTo(".villeSombre",
+    { opacity: 0 },
+    { opacity: 1, duration: 1 }, ">"
+);
+
 
 
 
