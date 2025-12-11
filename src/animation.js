@@ -13,9 +13,9 @@ export function spawnCendre() {
 
 //-------------------essai class ---------------
  
-class Cendre {
-    constructor (posX, posY) {
-        this.posX = 0;
-        this.posY = 0;
-    }
-}
+// class Cendre {
+//     constructor (posX, posY) {
+//         this.posX = 0;
+//         this.posY = 0;
+//     }
+// }
