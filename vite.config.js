@@ -7,6 +7,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: 'index.html',
+                page1: 'pompei.html',
                 //...mettre toutes les autres pages
             },
         },
