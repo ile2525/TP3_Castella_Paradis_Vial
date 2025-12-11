@@ -122,7 +122,6 @@ export function scrollAnimation() {
             scrub: 2,
             //markers: true
         }
-
     })
 
     // -------------------- Section 4 - Ilé --------------------
