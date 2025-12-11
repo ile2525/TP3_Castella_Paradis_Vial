@@ -30,6 +30,7 @@
 .part2 .bgCiel2 {
     position: relative;
     width: 100%;
+    transform: rotate(180deg);
 }
 
 .ville2 {
