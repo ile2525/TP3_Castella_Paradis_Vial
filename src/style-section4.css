@@ -29,3 +29,11 @@
     inset: 0;
     pointer-events: none;
 }
+
+.part4-narration2{
+    position: absolute;
+    z-index: 250;
+    text-align: center;
+    padding: 2rem 8rem;
+    color: aliceblue;
+}

@@ -201,7 +201,7 @@ gsap.to('.part3-base', {
     ScrollTrigger.create({
         trigger: ".partie4",
         start: "top bottom",
-        end: "bottom+=100",
+        end: "bottom top",
         scrub: true,
         markers: true,
 
@@ -211,8 +211,8 @@ gsap.to('.part3-base', {
 
             // Anime la particule
             gsap.fromTo(particule,
-                { opacity: 0, y: 0, scale: 1.5},
-                { y: 1920, opacity: 1, duration: 5, ease: "none", scale: 1}
+                { opacity: 1, y: 0, scale: 1.5},
+                { y: 1920, opacity: 0, duration: 5, ease: "none", scale: 1}
             );
 
             // Montée du tas de cendres
