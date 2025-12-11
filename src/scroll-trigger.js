@@ -44,8 +44,8 @@ export function scrollAnimation() {
 
         scrollTrigger: {
             trigger: ".boxBottom",
-            start: "top 80%",
-            end: "bottom center",
+            start: "20% 80%",
+            end: "90% bottom",
             scrub: true,
             //markers: true
         }
@@ -101,7 +101,7 @@ timeline1B.fromTo(".ville2",
     { opacity: 1, duration: 1 }
 );
 
-//-----apparition panache ----------------------
+//-----apparition panache ------------------------------2e section-------
 const timeline1C = gsap.timeline({
     scrollTrigger: {
         trigger: ".ville2",
@@ -121,20 +121,19 @@ timeline1C.fromTo(".panache2",
 const timeline1D = gsap.timeline({
     scrollTrigger: {
         trigger: ".ville2",
-        start: "40% top",
-        end: "bottom 10%",
+        start: "40% top",   //-----40-top
+        end: "bottom 10%",   //-----bottom 10
         scrub: 1,
         //markers: true
     }
 });
 //-----mouvement panache-----
 timeline1D.to(".panache2", 
-    { yPercent: 130,
-    ease: "none"
+    { yPercent: 100,
 });
 //-----mouvement ville------
 timeline1D.to(".ville2", {
-    yPercent: 200, 
+    yPercent: 150, 
     ease: "none"
 }, "<");       //-----"<" = commence en même temps que le panache2
 
@@ -161,7 +160,7 @@ gsap.to('.part3-base', {
         start: "top 10%",
         end: "bottom top",
         scrub: true,
-       // markers: true
+        markers: true
     }
 });
 

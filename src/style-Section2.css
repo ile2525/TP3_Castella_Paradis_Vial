@@ -27,6 +27,15 @@
     color: aliceblue;
 }
 
+.nar5 {
+    position: absolute;
+    z-index: 31;
+    top: 40%;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+}
+
+
 .part2 .bgCiel2 {
     position: relative;
     width: 100%;
@@ -46,13 +55,13 @@
     z-index: 29;
     width: 100%;
     opacity: 0.1;
-    top: -50%;
+    top: -47%;
 }
 
 .villeSombre {
     position: absolute;
     top: 58%;
-    z-index: 39;
+    z-index: 40; /*-------------probleme de chevauchement-----*/
     width: 100vw;
     opacity: 0.5;
 }

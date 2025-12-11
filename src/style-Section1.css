@@ -33,6 +33,11 @@
     height: auto;
 }
 
+.part1 .nar0 {
+    top: 3%;
+    color: #F3EBEB;
+}
+
 .part1 .nar1 {
     top: 10%;
 }
@@ -84,7 +89,7 @@
 
 /*-----ville---------------------*/
 .part1 .nar2 {
-    top: 73%;
+    top: 75%;
     opacity: 0;
 }
 
