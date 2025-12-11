@@ -101,7 +101,7 @@ timeline1B.fromTo(".ville2",
     { opacity: 1, duration: 1 }
 );
 
-//-----apparition panache ------------------------------2e section-------
+//-----apparition panache ------------------------------2e section----Sandra----------------
 const timeline1C = gsap.timeline({
     scrollTrigger: {
         trigger: ".ville2",
