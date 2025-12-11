@@ -132,22 +132,20 @@
     top: 20%;
     opacity: 1;
     color: aliceblue;
-
 }
 
 .balcon {
-    position: relative;
+    position: absolute;
     width: 100%;
     bottom: 0;
 }
 
 .cracks {
     position: absolute;
-    opacity: 0.5;
+    opacity: 0;
     z-index: 26;
-    width: 90%;
-    left: 6%;
-    top: 55%;
+    width: 100%;
+    top: 50%;
 }
 
 
