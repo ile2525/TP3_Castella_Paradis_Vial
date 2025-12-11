@@ -6,5 +6,120 @@
 
 body {
     background-color: #CCFAFF;
-    width: 100vw;
+    width: 100%;
+    
+}
+
+.navbar {
+  width: 90%;
+  border-radius: 1.25rem;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+  position: absolute;
+}
+
+.navbar .logo img {
+  height: 8rem;
+  cursor: pointer;
+  width: auto;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2vw;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+  text-decoration: underline;
+  color: #E98555;;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.hero-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 2.5rem; 
+  width: 100%;
+}
+
+.volcan-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.volcan-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+}
+
+/* Texte à droite */
+.texte {
+  text-align: right;
+  position: absolute;
+}
+
+.texte h2 {
+  font-weight: 700;
+  font-size: 2rem; 
+  margin-bottom: 0.6rem;
+  
+}
+
+.sous-titre {
+  font-weight: 400;
+  margin-bottom: 1.8rem; 
+  font-size: 1.1rem; 
+}
+
+.boxici {
+  background: #E98555;
+  padding: 1rem 1.5rem;
+  border-radius: 1.8rem; 
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.boxici:hover {
+  background: rgba(230, 126, 34, 1);
+}
+
+.boxici .title {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.btn-ici {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: text-decoration 0.3s ease;
+}
+
+.btn-ici:hover {
+  text-decoration: underline;
 }
