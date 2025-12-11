@@ -1,29 +1,49 @@
 .partie3 {
   position: relative;
-  z-index: 60;
+  z-index: 90;
+  width: 100vw;
+
 }
 
 .part3-base {
     width: 100%;
     display: block;
     position: relative;
-    z-index: 30;
+    z-index: 100;
+
 }
 
 .part3-nuee {
     position: absolute;
-    z-index: 40;
+    z-index: 110;
     opacity: 0;
-    top: -60%;
+    top: -30%;
     left: 0;
     width: 100%;
 }
 
+.box-narration1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 150;
+    position: relative;
+    width: 100vw;
+    margin-top: 300vh;
+}
+
+.rectangle-texte1{
+    width: 100%;
+    height: 100vh;
+    background-color: #A0655A;
+    position: relative;
+    
+}
+
 .part3-narration1{
     position: absolute;
-    z-index: 50;
-    top: 0;
-    opacity: 1;
     color: aliceblue;
+    max-width: 900px;
 }
 

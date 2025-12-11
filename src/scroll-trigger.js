@@ -194,18 +194,16 @@ gsap.to('.part3-base', {
     });
 
     timeline4.fromTo(part4Base,
-        {
-            scale: 2
-        },
-        { scale: 1, ease: "power1.out" }
+        {scale: 2},
+        { scale: 1, y:-100, ease: "power1.out" }
     )
 
     ScrollTrigger.create({
         trigger: ".partie4",
         start: "top bottom",
-        end: "bottom top",
+        end: "bottom+=100",
         scrub: true,
-        //markers: true,
+        markers: true,
 
         onUpdate: (self) => {
             // Génère une particule
@@ -213,13 +211,13 @@ gsap.to('.part3-base', {
 
             // Anime la particule
             gsap.fromTo(particule,
-                { opacity: 0, y: 0 },
-                { y: 1920, opacity: 1, duration: 10, ease: "none", scale: 1.5 }
+                { opacity: 0, y: 0, scale: 1.5},
+                { y: 1920, opacity: 1, duration: 5, ease: "none", scale: 1}
             );
 
             // Montée du tas de cendres
             const progress = self.progress;
-            cendreMontante.style.height = (progress * 100) + "%";
+            cendreMontante.style.height = (progress * 50) + "%";
         }
     });
 }

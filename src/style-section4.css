@@ -1,7 +1,7 @@
 .partie4 {
     position: relative;
     min-height: 100vh;
-    z-index: 70;
+    z-index: 200;
 }
 
 .part4-base {
@@ -12,6 +12,7 @@
 .cendre {
     width: 24px;
     position: absolute;
+    z-index: 210;
 }
 
 #cendre-montante {
