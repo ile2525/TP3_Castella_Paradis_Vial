@@ -121,8 +121,8 @@ timeline1C.fromTo(".panache2",
 const timeline1D = gsap.timeline({
     scrollTrigger: {
         trigger: ".ville2",
-        start: "40% top",   //-----40-top
-        end: "bottom 10%",   //-----bottom 10
+        start: "40% top",  
+        end: "bottom 10%",   
         scrub: 1,
         //markers: true
     }
@@ -133,7 +133,7 @@ timeline1D.to(".panache2",
 });
 //-----mouvement ville------
 timeline1D.to(".ville2", {
-    yPercent: 150, 
+    yPercent: 140,
     ease: "none"
 }, "<");       //-----"<" = commence en même temps que le panache2
 
@@ -260,7 +260,7 @@ matchmedia.add("(min-width : 300px)", () => {
       start: "top center",
       end: "bottom center",
       scrub: 1,
-      markers: true
+      //markers: true
     }
   });
 
