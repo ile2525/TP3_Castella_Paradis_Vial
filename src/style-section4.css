@@ -1,17 +1,18 @@
-/*--------------------------------------------Iléona-------------------------*/
+/*-------------------------Iléona-------------------------*/
 .partie4 {
     position: relative;
     min-height: 100vh;
     z-index: 200;
 }
-
+/*-------------------------Image fond-------------------------*/
 .part4-base {
     width: 100%;
     display: block;
 }
 
+/*-------------------------Particule et cendre-------------------------*/
 .cendre {
-    width: 24px;
+    width: 1.5rem;
     position: absolute;
     z-index: 210;
 }
@@ -27,10 +28,10 @@
 
 #particule-container {
     position: absolute;
-    inset: 0;
-    pointer-events: none;
+    inset: 0; /* équivalent de right, top, left et bottom à 0 */
 }
 
+/*-------------------------Texte-------------------------*/
 .part4-narration2{
     position: absolute;
     z-index: 250;
@@ -39,6 +40,7 @@
     color: aliceblue;
 }
 
+/*-------------------------Responsive-------------------------*/
 @media screen and (width <=768px) {
     .part4-narration2{
         padding: 1rem 2rem;
@@ -46,7 +48,7 @@
     }
 
     .cendre {
-        display: none;
+        width: 0.5rem;
     }
 
 }

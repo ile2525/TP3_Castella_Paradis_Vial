@@ -145,28 +145,33 @@ timeline1D.fromTo(".villeSombre",
 
 
 
-
-
-
-
     // -------------------- Section 3 - Ilé ---------------------------------------------------------------------
 
+
+//-----mouvement scale et deplacement de l'image de fond ------
 gsap.to('.part3-base', {
+
+    //état final
     scale: 1.5, 
-    x: "-10%",         
-    ease: "power1.out",
+    x: "-10%",      
+    ease: "power1.out", //power1.out = zoom out
+
+    //Déclanchement au  scroll
     scrollTrigger: {
         trigger: ".partie3",
         start: "top 10%",
         end: "bottom top",
-        scrub: true,
+        scrub: true, //relie au scroll
         // markers: true
     }
 });
 
+//-----apparition et descente de la nuée ------
     gsap.to('.part3-nuee', {
+
         opacity: 1,
         y: 1500,
+
         scrollTrigger: {
             trigger: ".partie3",
             start: "top bottom",
@@ -183,6 +188,7 @@ gsap.to('.part3-base', {
     const cendreMontante = document.getElementById("cendre-montante");
     const part4Base = document.querySelector(".part4-base");
 
+    //Essai d'intégration de la timeline pour le zoom out
     const timeline4 = gsap.timeline({
         scrollTrigger: {
             trigger: ".partie4",
@@ -193,11 +199,14 @@ gsap.to('.part3-base', {
         }
     });
 
+    //Application de la timeline - Essai du FromTo (pratique !)
     timeline4.fromTo(part4Base,
-        {scale: 2},
-        { scale: 1, y:-100, ease: "power1.out" }
+        {scale: 2}, // état de début
+        { scale: 1, y:-100, ease: "power1.out" } // état de fin
     )
 
+    //Utilisation différente nécéssaire pour les cendres
+    //Permet l'indépendence de l'animation
     ScrollTrigger.create({
         trigger: ".partie4",
         start: "top bottom",
@@ -216,8 +225,8 @@ gsap.to('.part3-base', {
             );
 
             // Montée du tas de cendres
-            const progress = self.progress;
-            cendreMontante.style.height = (progress * 50) + "%";
+            const progress = self.progress; //récupère la valeur du scroll entre 0 et 1
+            cendreMontante.style.height = (progress * 50) + "%"; //Lorsque valeur de scroll 1 hauteur = 50%
         }
     });
 
