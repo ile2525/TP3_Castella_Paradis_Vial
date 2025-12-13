@@ -65,7 +65,11 @@
     }
 
     .part3-nuee {
-        top: -80%;
+        top: -60%;
+    }
+
+    .box-narration1{
+        margin-top: 180vh;
     }
 }
 
