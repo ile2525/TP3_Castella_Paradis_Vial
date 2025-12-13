@@ -25,7 +25,7 @@ export function scrollAnimation() {
             //markers: true
         }
     })
-    //-----apparition plan 3----------------------------------------------------------
+    //-----apparition plan 3-----------------------------
     gsap.to(".v1", {
         opacity: 1,
 

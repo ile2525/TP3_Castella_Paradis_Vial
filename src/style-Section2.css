@@ -61,7 +61,7 @@
 .villeSombre {
     position: absolute;
     top: 58%;
-    z-index: 40; /*-------------probleme de chevauchement-----*/
+    z-index: 40;
     width: 100vw;
     opacity: 0.5;
 }
@@ -70,7 +70,7 @@
 
 
 
-/*------------------------media-queries-----mon cauchemar apparament---------------------------*/
+/*------------------------media-queries-------------------------------*/
 
 
 @media screen and (width <= 768px) {
