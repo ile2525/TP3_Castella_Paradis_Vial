@@ -153,6 +153,7 @@
 
 @media screen and (width <=768px) {
 
+    
     .narration {
         width: 90%;
         margin-left: 5%;
@@ -164,13 +165,32 @@
         width: 70%;
     }
 
-    /*-----ajuster scale volcan-----*/
+
+    /*-----ajuster scale volcan----et n2 pour le trigger-------------*/
+
+    .part1 .volcan {
+        transform: scale(2.5);
+    }
+
+    .part1 .n2 {
+        top: 65%;
+    }
+
+    .nar3 {
+        top: 40%;
+    }
+
 
     .part11 {
         position: relative;
         width: 100vw;
         height: 140vh;
     }
+
+    .balcon {
+    bottom: 1%;
+    }
+
 
     .cracks {
         top: 79%;

@@ -73,7 +73,23 @@
 /*------------------------media-queries-----mon cauchemar apparament---------------------------*/
 
 
-@media (max-width: 300px) {
+@media screen and (width <=768px) {
+
+    .partie2 {
+        height: 200vh;
+    }
+    
+    .nar5 {
+        top: 28%;
+    }
+
+    .boxTransition2 {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    top: -1%;
+    background-color: #A0655A;
+}
 
 
     }
