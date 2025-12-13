@@ -112,3 +112,31 @@ body {
 /*---------------------------------media queries ------------------------------------*/
 
 
+@media screen and (width <=768px) {
+
+  .volcan-image {
+    display: none;
+  }
+
+  .texte {
+    position: static;
+    text-align: center;
+    transform: translateY(30vh);
+    padding: 2rem;
+  }
+
+  .navbar nav ul li a {
+    font-size: 1rem;
+    color: black;
+  }
+
+  .navbar .logo img {
+    height: 4rem;
+    margin-left: 2rem;
+  }
+
+  body {
+    background-color:#a1b2d1
+  }
+
+}
