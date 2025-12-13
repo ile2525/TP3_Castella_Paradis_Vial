@@ -38,3 +38,10 @@
     padding: 2rem 8rem;
     color: aliceblue;
 }
+
+@media screen and (width <=768px) {
+    .part4-narration2{
+        padding: 1rem 2rem;
+        font-size: 0.9rem;
+    }
+}

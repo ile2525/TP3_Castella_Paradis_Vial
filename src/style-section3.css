@@ -48,3 +48,18 @@
     max-width: 900px;
 }
 
+@media screen and (width <=768px) {
+    .part3-narration1{
+        padding: 1rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .rectangle-texte1{
+        height: 30vh;
+    }
+
+    .part3-nuee {
+        top: -50%;
+    }
+}
+

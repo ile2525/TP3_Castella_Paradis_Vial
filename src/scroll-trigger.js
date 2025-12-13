@@ -220,5 +220,6 @@ gsap.to('.part3-base', {
             cendreMontante.style.height = (progress * 50) + "%";
         }
     });
+
 }
 
