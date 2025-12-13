@@ -51,4 +51,8 @@
         width: 0.5rem;
     }
 
+    #cendre-montante {
+        display: none;
+    }
+
 }
