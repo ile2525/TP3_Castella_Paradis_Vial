@@ -2,7 +2,7 @@
 
 .partie2 {
     position: relative;
-    width: 100vw;
+    width: 100vh;
     height: 400vh;
 }
 
@@ -90,6 +90,8 @@
     top: -1%;
     background-color: #A0655A;
 }
+
+
 
 
     }
