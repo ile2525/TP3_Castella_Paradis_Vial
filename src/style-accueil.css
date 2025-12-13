@@ -110,3 +110,21 @@ body {
 
 
 /*---------------------------------media queries ------------------------------------*/
+
+@media screen and (width <=768px) {
+
+  
+  .navbar {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .navbar nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  .texte h2 {
+    font-size: 1.5rem;
+  }
+
+}
